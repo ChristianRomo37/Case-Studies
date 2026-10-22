@@ -1,1 +1,5 @@
 Due to the scale of the data I worked with I wont be able to fully show the data but if you are interested in seeing the data I will provide the files from the months that I worked with.
+## Data Source
+The raw dataset used for this case study consists of 12 months of Cyclistic trip data (October 2025 - September 2026). Due to GitHub's file size limitations, the raw compressed files are hosted externally.
+
+👉 [Access the Raw Dataset on Google Drive](https://drive.google.com/drive/folders/1JFlvEfZO2Bh_EM05vV3VFuB8Q4gSVphT?usp=sharing)
