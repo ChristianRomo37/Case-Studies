@@ -29,20 +29,29 @@ end_lat - float
 end_lng - float
 member_casual - string
 
-After looking through the data there was no signs of bias and the information itself was credible. Due to looking back at the last 12 months everything is UpToDate. Along with all of this I've been notified and read the license for the data. There are some null values and incorrect info but that's what the sorting and filtering is for.
+After looking through the data there was no signs of bias and the information itself was credible. 
+Due to looking back at the last 12 months everything is UpToDate. Along with all of this I've been notified and read the license for the data. 
+There are some null values and incorrect info but that's what the sorting and filtering is for.
 
 The first step I do to make sure my data is a little more accessible is take all 12 months of data and put them into one whole dataset using the UNION ALL method.
 
-Due to the size of the data I'll hold off on sorting the data and instead filter and clean it first. With that being said the next thing I'd do is create one more dataset that is going to hold all the clean data.
+Due to the size of the data I'll hold off on sorting the data and instead filter and clean it first. 
+With that being said the next thing I'd do is create one more dataset that is going to hold all the clean data.
 
-To do this I'm going to create a dataset (cleaned_cyclistic_data) that takes all the columns of data along with making sure to add a column that tracks how long the ride is, a column that tracks the day, and a column that tracks the month.
+To do this I'm going to create a dataset (cleaned_cyclistic_data) that takes all the columns of data along with making sure to add a column that tracks how long the ride is, 
+a column that tracks the day, and a column that tracks the month.
 
-The created dataset will be built off a dummy list (cleaned_trips) that takes in all the information, creates the dataset and removes any null values. Then once that table is created I put all the information fully into the actual list and make sure to exclude any ride lengths outliers that make no sense(any negative, below 1, and exponential numbers).
+The created dataset will be built off a dummy list (cleaned_trips) that takes in all the information, creates the dataset and removes any null values. 
+Then once that table is created I put all the information fully into the actual list and make sure to exclude any ride lengths outliers that make no sense(any negative, below 1, and exponential numbers).
 
-Once the cleaned list is made I check to see if any data sticks out to me to begin with. I take note that the best variables to look at for this question are going to be the avg ride length, amount of trips, and when exactly these trips are taken.
+Once the cleaned list is made I check to see if any data sticks out to me to begin with. 
+I take note that the best variables to look at for this question are going to be the avg ride length, amount of trips, and when exactly these trips are taken.
 
 Using these data points I'm able to see clearly that although members have more trips, these said trips last for a lesser amount of time than the casual riders.
 
-Looking deeper we can take a look at when the members take trips and when the casuals take trips. When looking into this we can see that members are consistently able to ride more often than the casual members everyday of the week. However, the numbers do get considerably closer to each other during the weekends.
+Looking deeper we can take a look at when the members take trips and when the casuals take trips. 
+When looking into this we can see that members are consistently able to ride more often than the casual members everyday of the week. However, the numbers do get considerably closer to each other during the weekends.
 
-So with taking these two depictions of data, we can make the inference that the way that the two types of members differ is through their availability and need to use the bikes. It seems that the casual riders are using it more as a means of leisure due to the longer hours especially due to the spike in trips on the weekends, while the members are more than likely relying on it for a means of transportation due to the overall greater amount of trips that spike during the weekdays, even if they are shorter in duration.
+So with taking these two depictions of data, we can make the inference that the way that the two types of members differ is through their availability and need to use the bikes. 
+It seems that the casual riders are using it more as a means of leisure due to the longer hours especially due to the spike in trips on the weekends, 
+while the members are more than likely relying on it for a means of transportation due to the overall greater amount of trips that spike during the weekdays, even if they are shorter in duration.
